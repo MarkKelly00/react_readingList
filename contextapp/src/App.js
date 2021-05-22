@@ -1,5 +1,6 @@
 import React from 'react';
 import BookList from './components/BookList';
+import BookContextProvider from './context/BookContext';
 import Navbar from './components/Navbar';
 import ThemeContextProvider from './context/ThemeContext';
 import ThemeToggle from './components/ThemeToggle';
@@ -11,7 +12,9 @@ function App() {
       <ThemeContextProvider>
       <AuthContextProvider>
       <Navbar />
+      <BookContextProvider >
       <BookList />
+      </BookContextProvider>
       <ThemeToggle />
       </AuthContextProvider>
       </ThemeContextProvider>
