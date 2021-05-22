@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { AuthContext } from "../context/AuthContext";
-import { ThemeContext } from "../context/ThemeContext";
+import { AuthContext } from "../../context/AuthContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 class Navbar extends Component {
   render() {
